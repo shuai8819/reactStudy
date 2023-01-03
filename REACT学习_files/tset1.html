@@ -1,0 +1,26 @@
+<!-- 直接引入react 并简单渲染一个页面 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello react</title>
+</head>
+<body>
+    <!-- 容器 -->
+    <div id="myDiv"></div>
+</body>
+<!-- react核心库 -->
+<script src="./js/react.development.js" ></script>
+<!-- react-DOM 用于支持react操作DOM -->
+<script src="./js/react-dom.development.js"></script>
+<!-- babel 将jsx转化为普通js -->
+<script src="./js/babel.min.js"></script>
+<!-- type要写成 text/babel -->
+<script type="text/babel">
+    let inner= <h1>hello React</h1>
+    let ele = document.getElementById('myDiv')
+    ReactDOM.render(inner,ele)
+</script>
+</html>
